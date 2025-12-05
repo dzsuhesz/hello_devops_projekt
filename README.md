@@ -58,7 +58,25 @@ Futtasd a command-ot a projekt könyvtárban. Ez a Dockerfile alapján lebuildel
 
 ## Docker konténer futtatása
 
-### `docker run -p 8080:8080 hello-devops:v1`
+### `docker run -p 8080:8080 devops_projekt:v1`
 
 A böngészőben így elérheted a http://localhost:8080 alatt míg fut a konténer.
 Futtatásra kerül: (`serve -s build -l 8080`)
+
+# CI pipeline
+
+Github Actions alapú CI pipeline, ami:
+-letölti a kódot
+-beállítja a Node futtatási környezetet
+-futtatja az npm install és npm run build parancsokat
+-bejelentkezik a GitHub Container Registry-be
+-elkészíti a Docker image-et
+-feltölti azt a GHCR-be
+(workflow file: `.github/workflows/ci.yml`)
+
+## Image formátuma és használata
+
+### `ghcr.io/dzsuhesz/hello_devops_projekt:v1`
+
+### `docker pull ghcr.io/dzsuhesz/hello_devops_projekt:v1`
+### `docker run -p 8080:8080 ghcr.io/dzsuhesz/hello_devops_projekt:v1`
