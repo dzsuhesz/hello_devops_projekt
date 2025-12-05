@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This a simple "Hello World" level React application for a DEVOPS projekt.
 
 ## Available Scripts
 
