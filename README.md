@@ -1,6 +1,6 @@
 # DEVOPS projekt
 
-Ez egy egyszerű React alapú „Hello World” webalkalmazás!
+Ez egy egyszerű React alapú „Hello World” szintű webalkalmazás!
 Célja, hogy demontrálja a következő lépéseket:
 
 • kódkészítés
