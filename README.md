@@ -1,6 +1,4 @@
-# DEVOPS projekt
-# Perge György
-# ZBJARQ
+# DEVOPS projekt | Perge György ZBJARQ
 
 Ez egy egyszerű React alapú „Hello World” szintű webalkalmazás!
 Célja, hogy demontrálja a következő lépéseket:
